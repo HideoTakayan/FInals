@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thư viện ảnh tương tác</title>
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+  <h1>📸 Thư viện ảnh</h1>
+
+  <!-- Lightbox -->
+  <div class="cover-bg" onclick="hidelightbox()">
+    <span class="close-btn" onclick="hidelightbox(event)">&times;</span>
+    <img class="lightbox-img" src="" alt="Phóng to ảnh">
+  </div>
+
+  <!-- Grid ảnh -->
+  <div class="gallery-grid">
+    <figure>
+      <img src="img/bocchi.jpg" alt="Cô gái tóc hồng chơi guitar" onclick="showlightbox(this)">
+      <figcaption>Ảnh 1</figcaption>
+    </figure>
+    <figure>
+      <img src="img/cưới.png" alt="Cặp đôi chụp ảnh cưới" onclick="showlightbox(this)">
+      <figcaption>Ảnh 2</figcaption>
+    </figure>
+    <figure>
+      <img src="img/dio.jpg" alt="Nhân vật Dio" onclick="showlightbox(this)">
+      <figcaption>Ảnh 3</figcaption>
+    </figure>
+    <figure>
+      <img src="img/mem.jpg" alt="Meme hài hước" onclick="showlightbox(this)">
+      <figcaption>Ảnh 4</figcaption>
+    </figure>
+    <figure>
+      <img src="img/tsuna.jpg" alt="Nhân vật Tsuna" onclick="showlightbox(this)">
+      <figcaption>Ảnh 5</figcaption>
+    </figure>
+    <figure>
+      <img src="img/ẻn.jpg" alt="Biểu cảm dễ thương" onclick="showlightbox(this)">
+      <figcaption>Ảnh 6</figcaption>
+    </figure>
+  </div>
+
+  <script src="final.js"></script>
+</body>
+</html>
